@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 void make_tree(void);
-void print_linea(char, int, int);
+void print_lane(char, int, int);
 
 int main(){
 	
@@ -33,16 +33,16 @@ void make_tree(void){
 		else
 			character = '*';
 			
-		print_linea(character, i, 33);
+		print_lane(character, i, 33);
 	}
 	
- 	print_linea('|', 3, 33);
-	print_linea('|', 3, 33);
+ 	print_lane('|', 3, 33);
+	print_lane('|', 3, 33);
 	sleep(1);
 	system("CLS");
 }
 
-void print_linea(char ch, int repeat, int width){
+void print_lane(char ch, int repeat, int width){
     int i;
 	int pad = ( width - repeat ) / 2;
 	
